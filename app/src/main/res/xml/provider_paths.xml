@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Internal storage files directory -->
+    <files-path name="internal_files" path="." />
+
+    <!-- Internal storage cache directory -->
+    <cache-path name="cache" path="." />
+
+    <!-- External storage files directory -->
+    <external-files-path name="external_files" path="." />
+
+    <!-- External storage cache directory -->
+    <external-cache-path name="external_cache" path="." />
+
+    <!-- Documents directory for file sharing -->
+    <files-path name="documents" path="documents/" />
+
+    <!-- Images directory for photo sharing -->
+    <files-path name="images" path="images/" />
+
+    <!-- Downloads directory for downloaded files -->
+    <external-files-path name="downloads" path="Download/" />
+
+    <!-- Chat attachments directory -->
+    <files-path name="attachments" path="attachments/" />
+
+    <!-- Temporary files for sharing -->
+    <cache-path name="temp_files" path="temp/" />
+
+</paths>
+
+    <!-- Alternative simplified version if you only need basic file sharing -->
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <paths xmlns:android="http://schemas.android.com/apk/res/android">
+        <files-path name="files" path="." />
+        <cache-path name="cache" path="." />
+        <external-files-path name="external" path="." />
+    </paths>
+    -->
+
+    <!--
+    MANIFEST CONFIGURATION:
+    Add this to your AndroidManifest.xml inside the <application> tag:
+
+    <provider
+        android:name="androidx.core.content.FileProvider"
+        android:authorities="${applicationId}.fileprovider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/provider_paths" />
+    </provider>
+
+    USAGE EXAMPLE IN CODE:
+
+    // Get file URI for sharing
+    File file = new File(context.getFilesDir(), "documents/example.pdf");
+    Uri fileUri = FileProvider.getUriForFile(
+        context,
+        context.getPackageName() + ".fileprovider",
+        file
+    );
+
+    // Share the file
+    Intent shareIntent = new Intent(Intent.ACTION_SEND);
+    shareIntent.setType("application/pdf");
+    shareIntent.putExtra(Intent.EXTRA_STREAM, fileUri);
+    shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+    startActivity(Intent.createChooser(shareIntent, "Share document"));
+    -->

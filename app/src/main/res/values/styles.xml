@@ -1,0 +1,32 @@
+<resources>
+    <style name="Theme.EasyDocsAI" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorError">@color/error</item>
+    </style>
+
+    <style name="Theme.EasyDocsAI.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="cornerRadius">@dimen/corner_radius</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/margin_medium</item>
+    </style>
+
+    <style name="CardStyle" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardElevation">@dimen/elevation_card</item>
+        <item name="cardCornerRadius">@dimen/corner_radius</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+</resources>

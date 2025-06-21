@@ -1,0 +1,82 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.easydocs.ai'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.easydocs.ai"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        pickFirst '**/META-INF/DEPENDENCIES'
+        pickFirst '**/META-INF/LICENSE'
+        pickFirst '**/META-INF/NOTICE'
+        pickFirst '**/META-INF/LICENSE.txt'
+        pickFirst '**/META-INF/NOTICE.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+}
+
+dependencies {
+    // Core Android dependencies
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // Firebase BOM - this manages all Firebase versions
+    implementation platform('com.google.firebase:firebase-bom:32.7.0')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-database'
+
+    // Networking
+    implementation 'com.android.volley:volley:1.2.1'
+
+    // For PDF processing only - much lighter
+    implementation 'com.itextpdf:itextpdf:5.5.13.3'
+    implementation 'org.apache.poi:poi-ooxml:5.2.3'
+    implementation 'com.itextpdf:itext7-core:7.2.2'
+    implementation 'com.itextpdf:kernel:7.2.2'
+    implementation 'com.itextpdf:io:7.2.2'
+    implementation 'com.itextpdf:layout:7.2.2'
+
+
+
+
+    // For basic document processing - you'll need to modify your DocumentProcessor
+    // to handle Office docs differently or remove Office doc support temporarily
+
+    // Testing dependencies
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

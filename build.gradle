@@ -1,0 +1,35 @@
+// buildscript block MUST come first
+buildscript {
+    ext {
+        kotlin_version = '1.8.10' // This should match the version reported in your error
+        // other versions like agp_version, etc.
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.android.tools.build:gradle:8.0.2' // Your AGP version
+        classpath 'com.google.gms:google-services:4.4.1'
+        // Add other classpath dependencies here
+    }
+}
+
+// plugins block MUST come after buildscript
+plugins {
+    id 'com.android.application' version '8.0.2' apply false
+    id 'com.android.library' version '8.0.2' apply false
+}
+
+// All other configurations come after plugins block
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

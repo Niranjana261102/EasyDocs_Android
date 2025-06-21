@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">EasyDocs AI</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="dont_have_account">Don\'t have an account? Register</string>
+    <string name="documents">Documents</string>
+    <string name="chat">Chat</string>
+    <string name="upload_document">Upload Document</string>
+    <string name="type_message">Type your message...</string>
+    <string name="send">Send</string>
+    <string name="processing_document">Processing document...</string>
+    <string name="document_uploaded">Document uploaded successfully</string>
+    <string name="error_upload">Error uploading document</string>
+    <string name="logout">Logout</string>
+    <string name="select_document">Select Document</string>
+    <string name="pdf_files">PDF Files</string>
+    <string name="word_files">Word Files</string>
+    <string name="text_files">Text Files</string>
+    <string name="generating_response">Generating response...</string>
+</resources>
