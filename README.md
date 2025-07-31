@@ -40,10 +40,10 @@ AI: Custom RAG system and Genie AI for answers.
 <img src="AND4.jpg" alt="Screenshot" width="200" height="400"/>
 
 ### 🔹 Document Upload
-![Document Upload](AND3.jpg)
+<img src="AND3.jpg" alt="Screenshot" width="200" height="400"/>
 
 ### 🔹 Login Screen
-![Login Screen](AND1.jpg)
+<img src="AND1.jpg" alt="Screenshot" width="200" height="400"/>
 
 ### 🔹 Register Screen
-![Login Screen](AND2.jpg)
+<img src="AND2.jpg" alt="Screenshot" width="200" height="400"/>
