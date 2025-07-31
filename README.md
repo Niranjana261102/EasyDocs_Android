@@ -33,3 +33,17 @@ AI: Custom RAG system and Genie AI for answers.
 3. Documents are processed and stored in memory (or Firebase).
 
 4. Users ask questions — AI engine retrieves relevant text chunks and generates smart responses based on query type (definition, comparison, analysis, etc.).
+
+## 📷 Screenshots
+
+### 🔹 Chat Interface
+![Chat UI](Screenshots/AND4.png)
+
+### 🔹 Document Upload
+![Document Upload](screenshots/AND3.png)
+
+### 🔹 Login Screen
+![Login Screen](screenshots/AND1.png)
+
+### 🔹 Register Screen
+![Login Screen](screenshots/AND2.png)
