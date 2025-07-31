@@ -25,4 +25,11 @@ Backend: Flask (Python), Firebase Auth, Vector DB (ChromaDB).
 
 AI: Custom RAG system and Genie AI for answers.
 
-<img width="1656" height="333" alt="image" src=""D:\YIASCM\4TH SEM\Project\IMAGES_FOR_RECORD\AND1.jpg"" />
+# 🚀 How It Works
+1. Users register/login via Android interface.
+
+2. Upload documents (PDF, DOCX, TXT).
+
+3. Documents are processed and stored in memory (or Firebase).
+
+4. Users ask questions — AI engine retrieves relevant text chunks and generates smart responses based on query type (definition, comparison, analysis, etc.).
