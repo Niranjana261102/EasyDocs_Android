@@ -37,10 +37,10 @@ AI: Custom RAG system and Genie AI for answers.
 ## 📷 Screenshots
 
 ### 🔹 Chat Interface
-![Chat UI](Screenshots/AND4.png)
+![Chat UI](Screenshots/AND4.jpg)
 
 ### 🔹 Document Upload
-![Document Upload](screenshots/AND3.png)
+![Document Upload](AND3.png)
 
 ### 🔹 Login Screen
 ![Login Screen](screenshots/AND1.png)
