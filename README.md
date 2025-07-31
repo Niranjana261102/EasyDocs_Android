@@ -25,4 +25,4 @@ Backend: Flask (Python), Firebase Auth, Vector DB (ChromaDB).
 
 AI: Custom RAG system and Genie AI for answers.
 
-<img width="1656" height="333" alt="image" src="https://github.com/user-attachments/assets/22a14793-db7a-471a-998b-67492c9f04fe" />
+<img width="1656" height="333" alt="image" src=""D:\YIASCM\4TH SEM\Project\IMAGES_FOR_RECORD\AND1.jpg"" />
