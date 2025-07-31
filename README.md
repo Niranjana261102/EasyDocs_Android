@@ -43,7 +43,7 @@ AI: Custom RAG system and Genie AI for answers.
 ![Document Upload](AND3.jpg)
 
 ### 🔹 Login Screen
-![Login Screen](Screenshots/AND1.png)
+![Login Screen](AND1.jpg)
 
 ### 🔹 Register Screen
-![Login Screen](screenshots/AND2.png)
+![Login Screen](AND2.jpg)
